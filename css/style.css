@@ -218,13 +218,22 @@ a {
 
 
 .second-section-container{
-    display:flex;
-    width: 100%;
+    display: flex;
+    max-width: 1600px;
+    flex-direction: row;
     justify-content: center;
+    margin-bottom: 94px;
+}
+.rectangle {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 .text-list {
     max-width: 1600px;
-    height: 101px;
+   
     padding-top: 94px;
     
 }
@@ -232,7 +241,7 @@ a {
 .second-section {
     background: #fff;
     list-style-type: none;
-    margin-bottom: 94px;
+    
     
 }
 
@@ -278,6 +287,7 @@ a {
     display: flex;
     flex-direction: column;
     width:100%;
+    margin-top: 94px;
     }
 .hthree-text {
     display: flex;
@@ -300,6 +310,7 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 94px;
+    
 }
 
  .hthree-text {
@@ -322,18 +333,19 @@ a {
 .hfour-text {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
+    margin-top: 94px;
     padding-left: 502px;
     padding-right: 502px;
     
 }
+
 .fourth-section-continer ul{
     display: flex;
     padding-top: 50px ;
     justify-items: center;
     margin-left: 30px;
     margin-right: 30px;
-    padding-bottom: 96px;
+    margin-bottom: 96px;
 }
 
 .walker-container{
@@ -431,14 +443,28 @@ a {
 }
 /*--fifth section Regular Customer--*/
 .fifth-section-container{
-    display: flex;
+    display: block;
     width:1170px;
     justify-content: center;
-    height: 184px;
     flex-shrink: 0;
-    border-radius: 4px;
     margin-left: 215px;
     margin-top: 94px;
+    }
+
+.regular-rectangle {
+    width:170px;
+    height:92px;
+    background-color: #fff;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    margin-right: 30px;
+    margin-bottom: 94px;
+    }
+
+.regular-rectangle-container{
+    display:flex;
+    justify-content: center;
+
 }
 .regular-text{
     color: var(--link-color);
@@ -449,19 +475,28 @@ a {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
 }
 /*--footer first page--*/
 
 .footer-container {
     display: flex;
-    width: 100%;
+    width: 1600px;
+    height: 251px;
     
 }
 .footer-section{
-    display: bloc;
+    display: block;
     padding-left: 215px;
-    width: 1600px;
-    height: 251px;
+    width: 301px;
+    
+}
+.footer-social-section{
+    display:inline;
+    width:1600px;
+    
+    
+    
 }
 .web-studio2 {
     display: block;
@@ -511,6 +546,16 @@ color: white;
     color: #fff;
     padding-top: 12px;
 }
+.find-us-text{
+    color:#fff;
+    font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        text-transform: uppercase;
+        }
 
 
 
