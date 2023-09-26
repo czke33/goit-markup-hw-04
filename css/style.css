@@ -481,20 +481,21 @@ a {
 
 .footer-container {
     display: flex;
-    width: 1600px;
+    width: max-content;
     height: 251px;
     
 }
 .footer-section{
     display: block;
     padding-left: 215px;
-    width: 301px;
+    width:516px;
+    justify-content:left;
     
 }
 .footer-social-section{
-    display:inline;
-    width:1600px;
-    
+    display:block;
+    margin-top: 75px
+ 
     
     
 }
@@ -838,15 +839,25 @@ a:focus {
 
 .footer-container {
     display: flex;
-    width: 100%;
+    height: 251px;
+    width:max-content;
 
 }
 
 .footer-section {
-    display: bloc;
+    display: block;
     padding-left: 215px;
-    width: 1600px;
-    height: 251px;
+    width: 516px;
+    justify-content: left;
+   
+
+}
+
+.footer-social-section {
+    display: block;
+    margin-top: 75px;
+    
+
 }
 
 .web-studio2 {
@@ -899,4 +910,15 @@ a:focus {
 .tel-text {
     color: #fff;
     padding-top: 12px;
+}
+
+.find-us-text {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
 }
