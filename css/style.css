@@ -501,7 +501,7 @@ a {
 }
 .web-studio2 {
     display: block;
-    padding-top: 60px;
+    margin-top: 60px;
     padding-bottom: 28px;
 }
  
@@ -862,7 +862,7 @@ a:focus {
 
 .web-studio2 {
     display: block;
-    padding-top: 60px;
+    margin-top: 60px;
     padding-bottom: 28px;
 }
 
