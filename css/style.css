@@ -232,7 +232,17 @@ a {
     background-color: #F5F4FA;
     margin-right: 30px;
     margin-bottom: 30px;
-}
+   }
+
+   .svg-image1{
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/icons.svg/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+   }
+
 .text-list {
     max-width: 1600px;
    
@@ -810,6 +820,12 @@ a:focus {
         max-width: 100%;
         height: auto;
 }
+.hover-text img:hover{
+   background-color:var(--link-hover-color);
+    opacity: 0.2;
+
+}
+
 .image-class div{
     border-top-style:none;
     border-right-style: solid;
