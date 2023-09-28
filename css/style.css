@@ -1,8 +1,9 @@
 
 :root{
     --link-color: #212121;
-        --heading-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    --heading-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
     --link-hover-color: #2196f3; 
+    --svg-icons-color: #AFB1B8;
     }
 /*-- syles canceling--*/
 h1,
@@ -50,6 +51,7 @@ a {
     justify-content: space-between;
 
 }
+
 .link-class {
     display:flex;
     width: 100%;
@@ -61,9 +63,9 @@ a {
     display: flex;
     max-width: min-content;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     padding-left: 93px;
-
+        
 }
 
 .navigation-container li {
@@ -76,13 +78,19 @@ a {
     justify-content: right;
     align-content: center;
     padding-inline-start: 376px;
-    width: max-content;
-
+    width: 1600px;
 
 }
 
 .tel-class {
+    display:flex;
     padding-left: 40px;
+    width:170px;
+}
+.current{
+    padding-bottom: 27px;
+    border-bottom: var(--link-hover-color) solid 4 px;
+    border-radius: 2px;
 }
 
 .link-class {
@@ -90,7 +98,7 @@ a {
     font-weight: 700;
     font-size: 26 px;
     text-decoration: none;
-}
+    }
 
 .text-blue {
     color: var(--link-hover-color);
@@ -221,31 +229,84 @@ a {
 
 .second-section-container{
     display: flex;
-    max-width: 1600px;
+    width: 1600px;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 94px;
+    flex-wrap: nowrap;
 }
-.rectangle {
+
+.second-section-container li{
     width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
     margin-right: 30px;
     margin-bottom: 30px;
-   }
-
-   .svg-image1{
+}
+.rectangle1 {
+    display: flex;
+    background-color: #F5F4FA;
     width: 270px;
-    height: 120px;
-    background-image: url(../images/icons.svg/antenna.svg);
+    margin-bottom: 30px;
+    
+   
+}
+.svg-image1{   
+    padding:25px 100px 25px 100px;
     background-repeat: no-repeat;
     background-position: center;
     
-   }
+}
+
+.rectangle2 {
+    display: flex;
+    width: 270px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    
+}
+
+.svg-image2 {
+  padding: 25px 100px 25px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.rectangle3 {
+    display: flex;
+    width: 270px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    
+
+}
+
+.svg-image3 {
+    padding: 25px 100px 25px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.rectangle4 {
+    display: flex;
+    width: 270px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+
+
+}
+
+.svg-image4 {
+   padding: 25px 100px 25px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
 
 .text-list {
     max-width: 1600px;
-   
     padding-top: 94px;
     
 }
@@ -416,21 +477,47 @@ a {
    
     
 }
-.social-ellipse{
+.social-ellipse {
     display: inline-block;
     flex-direction: row;
-    justify-content: center;
     width: 44px;
-    height: 44px;
-    background-color: #000000;
+    height:44px;
     border-radius: 50%;
-    margin-right: 10px;
     margin-bottom: 30px;
-      
+
 }
+.icon{
+    display:block;
+    flex-direction: row;
+    width:44px;
+    height:44px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 12px;
+
+}
+.icon>svg{
+justify-content: center;
+align-items: center;
+width:44px;
+height:44px;
+}
+.svg>use{
+    width:44px;
+    height:44px;
+}
+
+
+
 
 .social-ellipse:hover {
     background-color: var(--link-hover-color);
+    fill:#f5f4fA;
+}
+
+.icon>use:hover {
+    fill: #FFF;
+
 }
 
 .hfive-text{
@@ -609,13 +696,12 @@ a {
     text-decoration: none;
 }
 .global-continer{
-    display: inline-block;
-    width: 1600px;
+       width: 1600px;
 }
 .header-container {
     display: flex;
     flex-direction: row;
-    max-width: 1600px;
+    max-width: 100%;
     height: 80px;
     align-items: center;
     border-style: solid;
@@ -627,12 +713,18 @@ a {
 
 .webstudio-container {
     display: flex;
-    max-width:min-content;
+    width:100%;
     flex-direction: row;
+    padding-left: 13.4375%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     
 }
 
-
+.link-class {
+    display: flex;
+    width: 100%;
+}
 
 .navigation-container2 ul{
     display: flex;
