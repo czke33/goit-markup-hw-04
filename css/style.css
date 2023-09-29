@@ -27,25 +27,6 @@ a {
 .global-continer{
      width: 1600px;
 }
-/**--Header container--*/
-.container.main-nav,
-.footer>.container {
-    padding-top: 0;
-    padding-bottom: 0;
-    height:80px;
-}
-
-.filter {
-    padding-bottom: 50px;
-}
-
-.works {
-    padding-top: 0;
-}
-
-.container.main-nav {
-    border-bottom: 1px solid #ececec;
-}
 
 .visually-hidden {
     position: absolute;
@@ -58,136 +39,9 @@ a {
     overflow: hidden;
 }
 
-/* Web Studio logo */
-.logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.18;
-}
-
-.logo-accent,
-.logo-regular:hover {
-    color: var(--link-hover-color);
-}
-
-.logo-accent:hover,
-.logo-regular {
-    color: var(--link-color);
-}
-
-.logo-regular.invers {
-    color: #fff;
-}
-
-.logo-regular.invers:hover {
-    color: var(--link-hover-color);
-}
-
-.footer-flex .logo-accent:hover {
-    color: var(--primary-white-color);
-}
-
-nav a,
-.auth-nav-contact {
-    text-decoration: none;
-}
-
-/* Site nav */
-.site-nav,
-.auth-nav {
-    display: flex;
-    align-items: center;
-}
-
-.site-nav {
-    margin-left: 80px;
-}
-
-.auth-nav {
-    margin-left: auto;
-}
-
-.site-nav .item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.auth-nav .item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.site-nav .link {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    color: var(--link-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus{
-    color: var(--link-hover-color);
-}
-.current {
-    color: var(--link-hover-color);
-    
-    padding-bottom: 27px;
-    border-bottom: var(--link-hover-color) solid 4 px;
-    border-radius: 2px;
-}
-.left-nav {
-    display: flex;
-    align-items: center;
-}
-
-.auth-nav-contact {
-    display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    justify-content: center;
-
-    color: #757575;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-.icon-nav {
-    fill: currentColor;
-    width: 16px;
-    max-height: 15px;
-    margin-right: 10px;
-}
-
-.main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.icon-nav:hover,
-.icon-nav:focus {
-    fill: currentColor;
-}
-.auth-nav-contact{
-    color: #757575;
-}
-.auth-nav-contact:hover,
-.auth-nav-contact:focus {
-    color: var(--link-hover-color);
-    fill: #757575;
-}
-
-
-/*--.header-container {
+.header-container {
     display: flex;
     flex-direction: row;
-    max-width: 100%;
     height: 80px;
     align-items: center;
     border-style: solid;
@@ -199,66 +53,74 @@ nav a,
 
 .webstudio-container {
     display: flex;
-    width: 100%;
     flex-direction: row;
     padding-left: 13.4375%;
     flex-wrap: nowrap;
     justify-content: space-between;
+    width:max-content;
 
 }
 
 .link-class {
-    display:flex;
-    width: 100%;
+    display: flex;
 }
-
 
 
 .navigation-container ul {
     display: flex;
-    width: 500px;
     flex-direction: row;
-    align-items: center;
+    align-content: center;
     padding-left: 93px;
-        
+
 }
 
 .navigation-container li {
     padding-right: 50px;
 }
 
-
-.contact-container ul {
-    display: flex;
-    justify-content: right;
-    align-content: center;
-    padding-inline-start: 376px;
-    width: 1600px;
-
-}
-
-.tel-class {
+.contact-container use{
     display:flex;
-    padding-left: 40px;
-    width:170px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
-.current{
-    padding-bottom: 27px;
-    border-bottom: var(--link-hover-color) solid 4 px;
-    border-radius: 2px;
+.contact-container ul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+       
 }
-
+.icon-nav {
+    max-width: 16px;
+    max-height: 16px;
+}
+.contact{
+    display:inline-block;
+    height:80px;
+    flex-wrap: nowrap;
+    max-width:500px;
+    padding-right: 10px;
+    align-items: center;
+    margin-left: 330px;
+}
+.mail{
+    padding-right:40px;
+}
 .link-class {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26 px;
     text-decoration: none;
+}
+.icon-nav{
+    margin-right:10px;
     }
 
 .text-blue {
     color: var(--link-hover-color);
     font-weight: 700;
     font-size: 26px;
+    overflow-clip-margin:unset;
 }
 
 .text-white {
@@ -274,34 +136,34 @@ nav a,
     font-weight: 500;
 }
 
-
-/*--Link section first page
-
- .nav-link {
+/*--Link section first page--*/
+.nav-link {
     list-style-type: none;
     color: #212121;
     text-decoration: none;
-    
-}
- .current {
-       color: var(--link-hover-color);
-   }
 
- a:link,
- 
- a:hover {
-    color: var(--link-hover-color);
 }
- a:focus {
+
+.current {
     color: var(--link-hover-color);
 }
 
- .nav-link { 
-    cursor:poiter;
+a:link,
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+a:focus {
+    color: var(--link-hover-color);
+}
+
+.nav-link {
+    cursor: poiter;
 }
 
 
-/*--Contact first page
+/*--Contact first page--*/
  .contact {
     list-style-type: none;
     color: #212121;
@@ -322,7 +184,6 @@ nav a,
 }
 
 
---*/
 
 /*--first section first page--*/
 
@@ -853,7 +714,10 @@ a {
 .global-continer{
        width: 1600px;
 }
-.header-container {
+
+/*--Header section--*/
+
+/*--.header-container {
     display: flex;
     flex-direction: row;
     max-width: 100%;
@@ -883,7 +747,6 @@ a {
 
 .navigation-container2 ul{
     display: flex;
-    max-width:min-content;
     flex-direction: row;
     align-content: center;
     padding-left: 93px;
@@ -896,15 +759,13 @@ a {
 
 .contact-container ul{
     display: flex;
-    justify-content:right ;
     align-content: center;
     padding-inline-start: 376px;
-    width: max-content;
-    
+       
         
 }
 .tel-class{
-        padding-left: 40px;
+    padding-left: 20px;
 }
 
 .link-class {
@@ -933,11 +794,7 @@ a {
     font-weight: 500;
 }
 
-
-
-
-
-/*--Link section second page--*/
+/*--Link section second page--
 
 .nav-link {
     list-style-type: none;
@@ -948,6 +805,12 @@ a {
 
 .current {
     color: var(--link-hover-color);
+}
+
+.current{
+    padding-bottom: 27px;
+    border-bottom:var(--link-hover-color) solid 4px;
+    border-radius: 2px;
 }
 
 
@@ -965,6 +828,7 @@ a:focus {
 }
 
 /*--Contact second page--*/
+
 .contact {
     list-style-type: none;
 }
@@ -986,12 +850,10 @@ a:focus {
 
 .contact a:active {
     color: var(--link-hover-color);
-}
-
-
-
+}--*/
 
 /*--buttun section second page--*/
+
 .main-container-second {
     display: grid;
     max-width: 1600px;
