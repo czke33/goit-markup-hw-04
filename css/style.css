@@ -1173,6 +1173,7 @@ a:focus {
     letter-spacing: 0.03em;
     text-align: left;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .f-social-ellipse {
@@ -1182,11 +1183,23 @@ a:focus {
     height: 44px;
     border-radius: 50%;
     margin-bottom: 30px;
-    fill:#FFF ;
-    background-color: #fff;
-    opacity: 0.1;
+    fill: #fff;
+        opacity: 1;
+
 }
 
+.f-social-icon {
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    fill:#FFF;
+}
 .f-icon {
     display: block;
     flex-direction: row;
@@ -1194,9 +1207,12 @@ a:focus {
     height: 44px;
     align-items: center;
     justify-content: center;
-    padding: 12px 12px;
+    padding: 12px;
     fill:#ffffff;
-    opacity:1;
+    opacity:1; 
+}
+.footer-social-icons:nth-child(1){
+    padding-left: 0;
 }
 
 .f-social-ellipse:hover {
