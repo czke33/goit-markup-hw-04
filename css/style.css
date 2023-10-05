@@ -6,6 +6,7 @@
     --link-hover-color: #2196f3;
     --svg-icons-color: #afb1b8;
     --grey-text-color: #757575;
+    --trasform: transform 250ms ease;
 }
 
 /*-- syles canceling--*/
@@ -180,7 +181,7 @@ a:focus {
     color: var(--link-hover-color);
 }
 
-/*--first section first page--*/
+/*--first section first page Effective solutions--*/
 
 .first-section {
     background: #2f303a;
@@ -239,6 +240,46 @@ a:focus {
     background-color: #188ce8;
 }
 
+.modal {
+    position: absolute;
+    width: 528px ;
+    height: 581px;
+    top: 221px;
+    left: 536px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+}
+
+.is-hidden {
+    visibility: hidden;
+}
+
+.close-btn {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #fff;
+    color: var(--link-color);
+    size: 18px;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height:30px;
+}
 /*--second section first page--*/
 
 .second-section-container {
@@ -352,12 +393,38 @@ a:focus {
     font-family: var(--heading-font-family);
 }
 
-/*--tirth section first page--*/
+/*--tirth section first page What We Do--*/
 
 .section-three-continer {
     display: flex;
     flex-direction: column;
-    margin-top: 94px;
+    margin-top: 0 auto;
+    height:auto;
+}
+.thumb {
+    position:relative;
+    overflow:hidden; 
+}
+
+.thumb> .label {
+    position:absolute;
+    margin:0;
+    font-family: var(--heading-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    bottom:0;
+    left:0;
+    background-color: rgba(47, 48, 58, 0.8);
+
 }
 
 .hthree-text {
@@ -600,336 +667,9 @@ icon:hover {
     fill: var(--link-hover-color);
 }
 
-/*--footer first page--*/
-/*--
-.footer-container {
-    display: flex;
-    width: max-content;
-    height: 251px;
-    
-}
-.footer-section{
-    display: block;
-    padding-left: 215px;
-    width:516px;
-    justify-content:left;
-    
-}
-.footer-social-section{
-    display:block;
-    margin-top: 75px
- 
-    
-    
-}
-.web-studio2 {
-    display: block;
-    margin-top: 60px;
-    padding-bottom: 28px;
-}
-.global-footer {
-     background: #2F303A;
-    text-align: left;
-    
-}
- .text-whites {
-color: white;
-}
- 
 
-.blue-text {
-    color: var(--link-hover-color);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26 px;
-}
-.white-text {
-    color: white;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26 px;
-}
-
-.footer-address {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 3%;
-    color: #fff;
-    font-family: var(--heading-font-family);
-    }
-
-.foot-address{
-    padding-bottom: 12px;
-  }  
-.mail-class {
-    color: #fff;
-}
-
-.tel-text {
-    color: #fff;
-    padding-top: 12px;
-}
-.find-us-text{
-    color:#fff;
-    font-family: Roboto;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        text-align: left;
-        text-transform: uppercase;
-        }
-.f-social-ellipse {
-    display: inline-block;
-    flex-direction: row;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    margin-bottom: 30px;
-    }
-
-.f-icon {
-    display: block;
-    flex-direction: row;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 12px;
-    }
-
-.f-icon>svg {
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    
-}
-
-.svg>use {
-    width: 44px;
-    height: 44px;
-}
-
-.f-social-ellipse{
-    fill:#fff;
-}
-
-.f-social-ellipse:hover {
-    background-color: var(--link-hover-color);
-    fill: #f5f4fA;
-    opacity: 0;
-}
-
-
-/*--second-page
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    margin: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-.global-continer{
-       width: 1600px;
-}
-
-/*--Header section
-.header-container {
-    display: flex;
-    flex-direction: row;
-    height: 80px;
-    align-items: center;
-    border-style: solid;
-    border-bottom-width: 1px;
-    border-color: #ececec;
-    flex-wrap: nowrap;
-
-}
-
-.webstudio-container {
-    display: flex;
-    flex-direction: row;
-    padding-left: 13.4375%;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: max-content;
-
-}
-
-.link-class {
-    display: flex;
-}
-
-
-.navigation-container ul {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    padding-left: 93px;
-
-}
-
-.navigation-container li {
-    padding-right: 50px;
-}
-
-.contact-container use {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-.contact-container ul {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-
-}
-
-.icon-nav {
-    max-width: 16px;
-    max-height: 16px;
-}
-
-.contact {
-    display: inline-block;
-    height: 80px;
-    flex-wrap: nowrap;
-    max-width: 500px;
-    padding-right: 10px;
-    align-items: center;
-    margin-left: 330px;
-}
-
-.mail {
-    padding-right: 40px;
-}
-
-.link-class {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26 px;
-    text-decoration: none;
-}
-
-.icon-nav {
-    margin-right: 10px;
-}
-
-.text-blue {
-    color: var(--link-hover-color);
-    font-weight: 700;
-    font-size: 26px;
-    overflow-clip-margin: unset;
-}
-
-.text-white {
-    color: #000000;
-    font-weight: 700;
-    font-size: 26px;
-}
-
-.global-header {
-    background-color: #fff;
-    font-family: var(--heading-font-family);
-    font-size: 14px;
-    font-weight: 500;
-}
-
-/*--Link section first page
-.nav-link {
-    list-style-type: none;
-    color: #212121;
-    text-decoration: none;
-
-}
-
-.current {
-    color: var(--link-hover-color);
-}
-.current{
-    padding-bottom: 27px;
-    border-bottom: var(--link-hover-color) solid 4px;
-    border-radius: 2px;
-}
-
-a:link,
-
-a:hover {
-    color: var(--link-hover-color);
-}
-
-a:focus {
-    color: var(--link-hover-color);
-}
-
-.nav-link {
-    cursor: poiter;
-    
-}
-
-/*--Contact first page
-.contact {
-    list-style-type: none;
-    color: #757575;
-    text-decoration: none;
-}
-
-.contact a:link,
-
-.contact a:hover {
-    color: var(--link-hover-color);
-
-}
-
-.contact a:focus {
-    color: var(--link-hover-color);
-}
-
-.contact a:active {
-    color: var(--link-hover-color);
-}
-
-/*--Contact second page
-
-.contact {
-    list-style-type: none;
-}
-
-.contact a:link,
-.contact a:visited {
-    color: #212121;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    color: var(--link-hover-color);
-
-}
-
-.contact a:focus {
-    color: var(--link-hover-color);
-}
-
-.contact a:active {
-    color: var(--link-hover-color);
-}--*/
 
 /*--button section second page--*/
-
 .main-container-second {
     display: grid;
     justify-content: center;
@@ -982,8 +722,9 @@ a:focus {
     color: white;
 }
 
+
 /*--image section second page--*/
-image-section {
+.image-section {
     display: flex;
     justify-content: center;
 }
@@ -1010,11 +751,43 @@ image-section {
     height: auto;
 }
 
-.hover-text img:hover {
-    background-color: var(--link-hover-color);
-    opacity: 0.2;
+.hover-box{
+    position: relative;
+    width: 370px;
+    height:294px;
+    margin:0;
+    overflow:hidden;
+    
 }
+.hover-text{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding-top: 63px;
+    padding-left: 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: var(--trasform);
+    }
 
+.hover-box:hover .hover-text{
+    transform: translateY(0);
+    }
+
+.hover-text p{
+    color:#fff;
+    margin:0;
+    font-family: var(--heading-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+   
+
+}    
 .textcard {
     border-top-style: none;
     border-right-style: solid;
