@@ -987,13 +987,17 @@ image-section {
     display: flex;
     justify-content: center;
 }
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-basis: calc((100%-90px) / 3);
+}
 
 .image-class {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
     align-items: center;
-    width: 1600px;
     padding-top: 56px;
     justify-content: center;
     flex-basis: calc((100%-90px) / 3);
